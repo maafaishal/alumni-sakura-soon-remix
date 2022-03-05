@@ -20,6 +20,11 @@ export const meta: MetaFunction = () => {
 
 export function links() {
   return [
+    {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: "true",
+    },
     { rel: "stylesheet", href: styles },
     {
       rel: "stylesheet",
