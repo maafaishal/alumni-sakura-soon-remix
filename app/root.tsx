@@ -9,6 +9,8 @@ import {
 
 import type { MetaFunction } from "remix";
 
+import Page404 from "./components/Page404";
+
 import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => {
@@ -36,6 +38,22 @@ export function links() {
       type: "image/x-icon",
     },
   ];
+}
+
+export function CatchBoundary() {
+  return (
+    <html>
+      <head>
+        <title>Halaman tidak ditemukan | Alumni Sakura</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <Page404 />
+        <Scripts />
+      </body>
+    </html>
+  );
 }
 
 export default function App() {
