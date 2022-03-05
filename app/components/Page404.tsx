@@ -9,7 +9,9 @@ const Page404 = () => {
           <p className="text-gray-800">Halaman tidak ditemukan</p>
         </div>
         <Link to="/">
-          <p className="text-white text-lg font-semibold">&#8592; Kembali</p>
+          <p className="text-white text-lg font-semibold flex items-center">
+            &#8592; Kembali
+          </p>
         </Link>
       </div>
     </div>

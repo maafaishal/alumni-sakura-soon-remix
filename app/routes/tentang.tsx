@@ -22,7 +22,9 @@ const About = () => {
           </p>
         </div>
         <Link to="/">
-          <p className="text-lg text-white font-semibold">&#8592; Kembali</p>
+          <p className="text-lg text-white font-semibold flex items-center">
+            &#8592; Kembali
+          </p>
         </Link>
       </div>
     </div>
